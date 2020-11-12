@@ -1,0 +1,6 @@
+# Use Ubuntu:Latest unless another OS is specifically required
+FROM ubuntu:latest
+
+LABEL jevans <jeff.evans@jevansdev.onmicrosoft.com>
+
+# Add further instructions from here # TODO: Add further instructions to base dockerfile as standard requirements become known
