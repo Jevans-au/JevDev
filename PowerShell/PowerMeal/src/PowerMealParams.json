@@ -1,0 +1,259 @@
+{
+    "Allergies": {
+        "J": [],
+        "K": []
+    },
+    "Delivery": {
+        "AliBaba": {
+            "CloseTime": "21:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Ali Baba",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "",
+                ""
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "",
+                ""
+            ],
+            "OpenTime": "10:00:00"
+        },
+        "BentoTei": {
+            "CloseTime": "21:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Bento Tei",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "Chicken Katsu Curry",
+                "Pork Gyoza"
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "Una Don (eel)",
+                "Pork Gyoza"
+            ],
+            "OpenTime": "11:00:00"
+        },
+        "BonnerTurkish": {
+            "CloseTime": "21:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Bonner Turkish Kebab",
+            "JeffCompatible": false,
+            "JeffFavourites": [
+                "",
+                ""
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "",
+                ""
+            ],
+            "OpenTime": "09:00:00"
+        },
+        "Dominos": {
+            "CloseTime": "23:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Dominos Pizza",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "Meatlovers",
+                "Double-bacon Cheeseburger",
+                "Cheesy Garlic Pizza"
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "Godfather sans Italian Sausage",
+                "Pepperoni"
+            ],
+            "OpenTime": "10:30:00"
+        },
+        "Guzman": {
+            "CloseTime": "20:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Guzman y Gomez",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "",
+                ""
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "",
+                ""
+            ],
+            "OpenTime": "11:00:00"
+        },
+        "HungryJacks": {
+            "CloseTime": "23:59:00",
+            "DeliveryPlatforms": [
+                "Menulog"
+            ],
+            "DisplayName": "Hungry Jacks",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "Cheesy Bacon Tendercrisp Large Meal"
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "Vegan Cheeseburger Large Meal"
+            ],
+            "OpenTime": "06:00:00"
+        },
+        "KFC": {
+            "CloseTime": "22:00:00",
+            "DeliveryPlatforms": [
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "KFC",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "Zinger Stacker Combo"
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "Original Fillet Burger Combo"
+            ],
+            "OpenTime": "10:30:00"
+        },
+        "LaEmpanada": {
+            "CloseTime": "16:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "La Empanada",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "",
+                ""
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "",
+                ""
+            ],
+            "OpenTime": "07:00:00"
+        },
+        "Oporto": {
+            "CloseTime": "20:00:00",
+            "DeliveryPlatforms": [
+                "Deliveroo"
+            ],
+            "DisplayName": "Oporto",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "Crispy Chicken Strips 8 Pack"
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "Double Bondi Burger Meal"
+            ],
+            "OpenTime": "10:30:00"
+        },
+        "Subway": {
+            "CloseTime": "21:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Sbubby: Eef Freef",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "Chicken Snitzel Sub Footlong",
+                ""
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "Pizza Melt Sub Footlong"
+            ],
+            "OpenTime": "07:00:00"
+        },
+        "Template": {
+            "CloseTime": "00:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "",
+            "JeffCompatible": false,
+            "JeffFavourites": [
+                "",
+                ""
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "",
+                ""
+            ],
+            "OpenTime": "00:00:00"
+        },
+        "WokItUp": {
+            "CloseTime": "21:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Wok It Up!",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "Satay Chicken Box"
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "Char Kuai Teow (CKT) Box"
+            ],
+            "OpenTime": "10:30:00"
+        },
+        "Zambrero": {
+            "CloseTime": "21:00:00",
+            "DeliveryPlatforms": [
+                "Uber Eats",
+                "Deliveroo",
+                "Menulog"
+            ],
+            "DisplayName": "Zambrero",
+            "JeffCompatible": true,
+            "JeffFavourites": [
+                "",
+                ""
+            ],
+            "KellyCompatible": true,
+            "KellyFavourites": [
+                "",
+                ""
+            ],
+            "OpenTime": "10:30:00"
+        }
+    },
+    "HomeMade": {
+        "InventoryPath": "",
+        "Recipes": {}
+    }
+}
