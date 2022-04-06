@@ -39,7 +39,7 @@ function Write-FancyHost {
         $ObjectColour = 'magenta'
     )
     If($Object){
-        $SplitMessage = $Message -split $Object
+        $SplitMessage = $Message -split [regex]::Escape($Object)
     }
     If($SplitMessage){
         ForEach($Item in $SplitMessage){
