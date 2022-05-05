@@ -12,9 +12,13 @@
 .PARAMETER ObjectColour
     The colour used to highlight the Object word in the message.
     Default colour is magenta unless another value is provided, these values must match those provided by the 'foregroundcolor' parameter for Write-Host
+.PARAMETER Indent
+    Adds indents (tabs, 4 spaces, etc) at the start of the message, if provided message already has indenting this will add more indents to it.
 .NOTES
+    Version:    1.1.0
     Author:     Jeff Evans
     Created:    2020/08/28
+    Updated:    2022/05/05
 #>
 
 function Write-FancyHost {
@@ -27,6 +31,8 @@ function Write-FancyHost {
         [Parameter(Mandatory = $false)]
         [string]
         $Object,
+        [Parameter(Mandatory = $false)]
+        $ObjectWrapperCharacter,
         # The colour that the rest of the message will present in
         [Parameter(Mandatory = $false)]
         [Alias("ContextColor")]
@@ -36,23 +42,36 @@ function Write-FancyHost {
         [Parameter(Mandatory = $false)]
         [Alias("ObjectColor")]
         [string]
-        $ObjectColour = 'magenta'
+        $ObjectColour = 'magenta',
+        [Parameter(Mandatory = $false)]
+        [int]
+        $Indent
     )
-    If($Object){
+    If ($Indent) {
+        $tab = '   '
+        $Message = (($tab * $Indent) + $Message)
+    }
+    If ($Object) {
         $SplitMessage = $Message -split [regex]::Escape($Object)
     }
-    If($SplitMessage){
-        ForEach($Item in $SplitMessage){
-            If($Item -eq $SplitMessage[-1]){
+    If ($SplitMessage) {
+        ForEach ($Item in $SplitMessage) {
+            If ($Item -eq $SplitMessage[-1]) {
                 Write-Host $Item -ForegroundColor $ContextColour
             }
-            Else{
+            Else {
                 Write-Host $Item -NoNewline -ForegroundColor $ContextColour
-                Write-Host $Object -ForegroundColor $ObjectColour -NoNewline
+                If($ObjectWrapperCharacter){
+                    $ObjectToWrite = ($ObjectWrapperCharacter[0] + $Object + $ObjectWrapperCharacter[1])
+                }
+                Else{
+                    $ObjectToWrite = $Object
+                }
+                Write-Host $ObjectToWrite -ForegroundColor $ObjectColour -NoNewline
             }
         }
     }
-    Else{
+    Else {
         Write-Host $Message -ForegroundColor $ContextColour
     }
 }
