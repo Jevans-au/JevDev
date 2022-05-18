@@ -14,6 +14,19 @@
     Default colour is magenta unless another value is provided, these values must match those provided by the 'foregroundcolor' parameter for Write-Host
 .PARAMETER Indent
     Adds indents (tabs, 4 spaces, etc) at the start of the message, if provided message already has indenting this will add more indents to it.
+.EXAMPLE
+    PS C:\ Write-FancyHost -Message '1. Introduction - Square Brackets' -Object 'Square Brackets' -ObjectWrapperCharacter @('[',']') -ContextColour Green -ObjectColour Cyan
+    PS C:\ Write-FancyHost -Message 'a. An Indented Line You Say?' -Object 'a.' -ContextColour Yellow -ObjectColour Cyan -Indent 1
+    PS C:\ Write-FancyHost -Message 'i. Two Indented Lines You Say!?' -Object 'i.' -ContextColour Blue -ObjectColour Yellow -Indent 2
+    PS C:\ Write-FancyHost -Message 'ii. Yes I do say, get a grip.' -Object 'ii.' -ContextColour Blue -ObjectColour Yellow -Indent 2
+
+    1. Introduction - [Square Brackets]
+        a. An Indented Line You Say?
+            i. Two Indented Lines You Say!?
+            ii. Yes I do say, get a grip.
+
+    --------------------------------------------------------
+    Obviously we won't be able to see any colour here in the code comment.
 .NOTES
     Version:    1.1.0
     Author:     Jeff Evans
